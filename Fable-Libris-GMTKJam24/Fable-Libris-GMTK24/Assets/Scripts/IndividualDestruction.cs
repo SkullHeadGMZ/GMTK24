@@ -9,11 +9,11 @@ public class IndividualDestruction : MonoBehaviour
     public int relatedFinder;
     public GameObject toyCounterpart;
     public GameManager gameManager;
-    bool mousedOver;
+    //bool mousedOver;
     // Start is called before the first frame update
     void Start()
     {
-        mousedOver = false;
+        //usedOver = false;
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class IndividualDestruction : MonoBehaviour
         }
     }
 
-    private void OnMouseEnter()
+   /*Private void OnMouseEnter()
     {
         print("mouse entered");
         mousedOver = true;
@@ -44,5 +44,5 @@ public class IndividualDestruction : MonoBehaviour
     {
         print("mouse left");
         mousedOver = false;
-    }
+    }*/
 }
