@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &86787410986346322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326996111480569741}
+  - component: {fileID: 4038032999855006330}
+  - component: {fileID: 4224531850915289691}
+  - component: {fileID: 834231670106689586}
+  - component: {fileID: 856785504558172421}
+  - component: {fileID: 1354294175362869965}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &326996111480569741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86787410986346322}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.6733108, y: 2.9629965, z: -10.023341}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4038032999855006330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86787410986346322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7892b775eec264a9c711e18077f2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kidCam: {fileID: 0}
+  playCam: {fileID: 0}
+--- !u!114 &4224531850915289691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86787410986346322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06179b2340025224f8c0f1b2b443aedd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playPiece: {fileID: 0}
+  toyPiece: {fileID: 0}
+  placingCoordinates: {x: 0, y: 0, z: 0}
+  kidCoordinates: {x: 0, y: 0, z: 0}
+  canPlace: 0
+  selector: {fileID: 0}
+  manager: {fileID: 856785504558172421}
+--- !u!114 &834231670106689586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86787410986346322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95d75dd73a3d9c45b365d9b4da0638a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  canDestroy: 0
+--- !u!114 &856785504558172421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86787410986346322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca729b69b4298c4bb54e4deee5485a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phase: 0
+  placeButt: {fileID: 0}
+  destroyButt: {fileID: 0}
+  kidUI: {fileID: 0}
+  toyUI: {fileID: 0}
+  currentLevel: 0
+--- !u!114 &1354294175362869965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86787410986346322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33726d532a6e4ae46a548b76235fca99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifesprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  player: {fileID: 0}
+  currentLifeSprite: 0

@@ -29,4 +29,17 @@ public class ObjectSelector : MonoBehaviour
         placer.toyPiece = toyPiece;
         placer.selector = gameObject.GetComponent<ObjectSelector>();
     }
+
+    public void ChangeOrientation()
+    {
+
+    }
+
+    enum direction
+    {
+        front,
+        left,
+        right,
+        back
+    }
 }
