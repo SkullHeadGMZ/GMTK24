@@ -8,16 +8,17 @@ public class ObjectPlacer : MonoBehaviour
     public GameObject toyPiece;
     public Vector3 placingCoordinates;
     public Vector3 kidCoordinates;
+    public bool canPlace;
     // Start is called before the first frame update
     void Start()
     {
-        
+        canPlace = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && playPiece != null && placingCoordinates != null && kidCoordinates != null)
+        if (Input.GetMouseButtonDown(0) && canPlace == true)
         {
             PlaceObject();
         }

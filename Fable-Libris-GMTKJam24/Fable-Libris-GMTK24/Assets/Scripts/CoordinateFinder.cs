@@ -10,7 +10,7 @@ public class CoordinateFinder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       kidVector = transform.position;
+       kidVector = new Vector3(transform.position.x,transform.position.y,transform.position.z-5);
     }
 
     // Update is called once per frame
@@ -23,5 +23,10 @@ public class CoordinateFinder : MonoBehaviour
     {
         placer.kidCoordinates = kidVector;
         placer.placingCoordinates = PlayVector;
+    }
+
+    private void OnMouseOver()
+    {
+        placer.canPlace = true;
     }
 }
