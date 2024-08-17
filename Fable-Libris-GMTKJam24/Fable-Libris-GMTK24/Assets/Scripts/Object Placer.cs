@@ -10,6 +10,7 @@ public class ObjectPlacer : MonoBehaviour
     public Vector3 kidCoordinates;
     public bool canPlace;
     public ObjectSelector selector;
+    public GameManager manager;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +28,13 @@ public class ObjectPlacer : MonoBehaviour
 
     public void PlaceObject()
     {
-        if (selector != null && selector.piecesLeft > 0)
+        if (selector != null && selector.piecesLeft > 0 && manager.phase == GameManager.PlayPhase.Place)
         {
-            Instantiate(playPiece, new Vector3(placingCoordinates.x, placingCoordinates.y, placingCoordinates.z), Quaternion.identity);
-            Instantiate(toyPiece, new Vector3(kidCoordinates.x, kidCoordinates.y, kidCoordinates.z), Quaternion.identity);
+            var ObjectOne = (GameObject) Instantiate(playPiece, new Vector3(placingCoordinates.x, placingCoordinates.y, placingCoordinates.z), Quaternion.identity);
+            var ObjectTwo = (GameObject) Instantiate(toyPiece, new Vector3(kidCoordinates.x, kidCoordinates.y, kidCoordinates.z), Quaternion.identity);
+            ObjectTwo.GetComponent<IndividualDestruction>().toyCounterpart = ObjectOne;
+            ObjectTwo.GetComponent<IndividualDestruction>().gameManager = manager;
+            ObjectTwo.GetComponent<IndividualDestruction>().manager = manager.gameObject.GetComponent<DestructionManager>();
             selector.piecesLeft --;
             selector.text.text = "x" + selector.piecesLeft;
         }
