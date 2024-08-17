@@ -6,7 +6,7 @@ public class ObjectSelector : MonoBehaviour
 {
     public ObjectPlacer placer;
     public GameObject selectedPiece;
-    public GameObject[] pieces;
+    public GameObject toyPiece;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +20,9 @@ public class ObjectSelector : MonoBehaviour
     }
 
 
-    public void ChoosePiece(int piece)
+    public void ChoosePiece()
     {
-        selectedPiece = pieces[piece];
-        placer.playPiece = selectedPiece;
+        placer.playPiece = selectedPiece; ;
+        placer.toyPiece = toyPiece;
     }
 }
