@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 44142031}
   - component: {fileID: 44142030}
   - component: {fileID: 44142033}
-  - component: {fileID: 44142032}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -170,21 +169,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &44142032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44142029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bd5c76d14a9b5b45ac79b8834211a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  placer: {fileID: 44142033}
-  selectedPiece: {fileID: 1996372324}
-  toyPiece: {fileID: 0}
 --- !u!114 &44142033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,11 +181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06179b2340025224f8c0f1b2b443aedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playPiece: {fileID: 1996372324}
-  toyPiece: {fileID: 1996372324}
+  playPiece: {fileID: 0}
+  toyPiece: {fileID: 0}
   placingCoordinates: {x: 0, y: 0, z: 0}
   kidCoordinates: {x: 0, y: 0, z: 0}
   canPlace: 0
+  selector: {fileID: 0}
 --- !u!1 &83427952
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +965,8 @@ MonoBehaviour:
   placer: {fileID: 44142033}
   selectedPiece: {fileID: 1996372324}
   toyPiece: {fileID: 1996372324}
+  piecesLeft: 2
+  text: {fileID: 237829374}
 --- !u!1 &737450928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,6 +1716,8 @@ MonoBehaviour:
   placer: {fileID: 44142033}
   selectedPiece: {fileID: 1000778389}
   toyPiece: {fileID: 1000778389}
+  piecesLeft: 2
+  text: {fileID: 1732839032}
 --- !u!1 &1201674909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2393,6 +2382,8 @@ MonoBehaviour:
   placer: {fileID: 44142033}
   selectedPiece: {fileID: 1604228120}
   toyPiece: {fileID: 1604228120}
+  piecesLeft: 2
+  text: {fileID: 1313772812}
 --- !u!1 &1599395991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2861,8 @@ MonoBehaviour:
   placer: {fileID: 44142033}
   selectedPiece: {fileID: 1295641718}
   toyPiece: {fileID: 1295641718}
+  piecesLeft: 2
+  text: {fileID: 737450930}
 --- !u!1 &1889720463
 GameObject:
   m_ObjectHideFlags: 0
