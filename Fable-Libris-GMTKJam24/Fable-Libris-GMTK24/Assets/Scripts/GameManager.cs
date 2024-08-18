@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject destroyButt;
     public GameObject kidUI;
     public GameObject toyUI;
+    public int currentLevel;
     // Start is called before the first frame update
     void Start()
     {

@@ -10,6 +10,7 @@ public class ObjectSelector : MonoBehaviour
     public GameObject toyPiece;
     public int piecesLeft;
     public Text text;
+    public GameObject selectionBG;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +29,18 @@ public class ObjectSelector : MonoBehaviour
         placer.playPiece = selectedPiece; ;
         placer.toyPiece = toyPiece;
         placer.selector = gameObject.GetComponent<ObjectSelector>();
+    }
+
+    public void ChangeOrientation()
+    {
+
+    }
+
+    enum direction
+    {
+        front,
+        left,
+        right,
+        back
     }
 }
