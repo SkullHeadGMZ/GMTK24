@@ -10,6 +10,7 @@ public class ObjectSelector : MonoBehaviour
     public GameObject toyPiece;
     public int piecesLeft;
     public Text text;
+    public GameObject selectionBG;
     // Start is called before the first frame update
     void Start()
     {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4224531850915289691}
   - component: {fileID: 834231670106689586}
   - component: {fileID: 856785504558172421}
+  - component: {fileID: 5188839441792439412}
   - component: {fileID: 1354294175362869965}
   m_Layer: 0
   m_Name: GameManager
@@ -105,6 +106,26 @@ MonoBehaviour:
   kidUI: {fileID: 0}
   toyUI: {fileID: 0}
   currentLevel: 0
+--- !u!114 &5188839441792439412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86787410986346322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b0824ddce706244f9187b9ace5a536c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zordUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1354294175362869965
 MonoBehaviour:
   m_ObjectHideFlags: 0
